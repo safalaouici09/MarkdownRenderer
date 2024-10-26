@@ -132,6 +132,6 @@ async function start(): Promise<void> {
         rawMarkdown.textContent += chunk;
         renderMarkdown(chunk);
         i += chunkSize;
-        await new Promise<void>((resolve) => setTimeout(resolve, 100));
+        await new Promise<void>((resolve) => setTimeout(resolve, 1000));
     }
 }
